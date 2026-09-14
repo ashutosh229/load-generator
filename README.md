@@ -71,11 +71,11 @@ stages run and read the errors off the plots):
 
 ```bash
 python loadgen.py \
-  --lb-url http://10.1.75.79:5205 \
+  --lb-url http://10.1.75.79:6205 \
   --stages 200,350,500,750,1000,1500,2000,2500 \
   --requests-per-stage 5000 \
   --content-type json \
-  --metrics-agents 10.1.75.79:4206,10.1.75.79:4207,10.1.75.79:4208,10.1.75.79:3205 \
+  --metrics-agents 10.1.75.79:4206,10.1.75.79:4207,10.1.75.79:4208,10.1.75.79:4205 \
   --out-dir ../results
 ```
 
